@@ -22,3 +22,9 @@ Objectives :
 * Implement a copy constructor and apply rule of 3 ;
 * Use pointers and references ;
 * Implement operators using friend functions.
+
+### 3. Graphic objects
+
+Objectives :
+* Implement inheritance from an UML diagram
+* Study polymorphism
