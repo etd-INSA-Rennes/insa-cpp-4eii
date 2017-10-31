@@ -6,17 +6,18 @@
 //  Copyright © 2017 Thomas Bouvier. All rights reserved.
 //
 
-#ifndef Card_hpp
-#define Card_hpp
+#pragma once
 
 #include <stdio.h>
 #include <iostream>
+#include <ostream>
 #include <vector>
+#include <string>
 
 namespace {
     const std::string suits_names[] = {"None", "Clubs", "Diamonds", "Hearts", "Spades"};
     const std::string symbols_names[] = {"None", "Ace", "King", "Queen", "Jack", "Ten", "Nine", "Eight", "Seven"};
-}
+};
 
 class Card {
 public:
@@ -54,5 +55,3 @@ private:
 };
 
 std::ostream& operator<<(std::ostream& os, const Card& card);
-
-#endif /* Card_hpp */

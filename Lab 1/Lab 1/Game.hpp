@@ -6,11 +6,11 @@
 //  Copyright © 2017 Thomas Bouvier. All rights reserved.
 //
 
-#ifndef Game_hpp
-#define Game_hpp
+#pragma once
 
 #include <stdio.h>
 #include <vector>
+#include <algorithm>
 
 #include "Card.hpp"
 
@@ -38,5 +38,3 @@ public:
 };
 
 std::ostream& operator<<(std::ostream& os, const Game& game);
-
-#endif /* Game_hpp */
