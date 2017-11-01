@@ -12,8 +12,9 @@ public:
 
 	void move(int dx, int dy);
 
-	static MyGraphicObject * getFirst();
-	inline MyGraphicObject * getNext() const;
+	static inline MyGraphicObject * getFirst() { return MyGraphicObject::first_; }
+
+	inline MyGraphicObject * getNext() const { return next_; }
 
 protected:
 

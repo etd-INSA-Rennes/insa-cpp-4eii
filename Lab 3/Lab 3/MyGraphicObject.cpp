@@ -19,11 +19,3 @@ void MyGraphicObject::move(int dx, int dy) {
 	x_ += dx;
 	y_ += dy;
 }
-
-MyGraphicObject * MyGraphicObject::getFirst() {
-	return MyGraphicObject::first_;
-}
-
-MyGraphicObject * MyGraphicObject::getNext() const {
-	return next_;
-}
