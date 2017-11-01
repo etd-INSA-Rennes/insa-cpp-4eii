@@ -24,6 +24,6 @@ MyGraphicObject * MyGraphicObject::getFirst() {
 	return MyGraphicObject::first_;
 }
 
-MyGraphicObject * MyGraphicObject::getNext() {
+MyGraphicObject * MyGraphicObject::getNext() const {
 	return next_;
 }

@@ -7,3 +7,7 @@ MyCircle::MyCircle(int x, int y, Color color, bool fill, int radius) : MyGraphic
 MyCircle::~MyCircle() {
 
 }
+
+void MyCircle::draw() {
+	Draw::circle(x_, y_, radius_, 2, color_, fill_);
+}

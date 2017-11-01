@@ -5,15 +5,15 @@
 class MyGraphicObject {
 
 public:
-	MyGraphicObject(int x = 0, int y = 0, Color color = Color::Black);
+	explicit MyGraphicObject(int x = 0, int y = 0, Color color = Color::Black);
 	~MyGraphicObject();
 
 	virtual void draw() = 0;
 
 	void move(int dx, int dy);
 
-	static inline MyGraphicObject * getFirst();
-	inline MyGraphicObject * getNext();
+	static MyGraphicObject * getFirst();
+	inline MyGraphicObject * getNext() const;
 
 protected:
 
