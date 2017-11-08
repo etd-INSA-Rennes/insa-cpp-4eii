@@ -5,7 +5,9 @@
 class MyPoint : public MyGraphicObject {
 
 public:
-	MyPoint(int x = 0, int y = 0, int color = Color::Black);
+	explicit MyPoint(int x = 0, int y = 0, Color color = Color::Black);
 	~MyPoint();
+
+	void draw();
 };
 

@@ -7,3 +7,7 @@ MySegment::MySegment(int x, int y, Color color, int dx, int dy) : MyGraphicObjec
 MySegment::~MySegment() {
 
 }
+
+void MySegment::draw() {
+	Draw::line(x_, y_, x_ + dx_, y_ + dy_, 2, color_);
+}

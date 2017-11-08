@@ -203,10 +203,10 @@ namespace Draw {
 	* \param[in] fill : true if the rectangle is filled, false otherwise
 	*/
 	void rectangle(int x1, int y1, int side_length, int side_width, int pen_width, Color c, bool fill) {
-
 		Graphics graphics(hdc);
 		Pen pen(c, (Gdiplus::REAL)pen_width);
 		graphics.DrawRectangle(&pen, x1, y1, side_length, side_width);
+
 		if (fill) {
 			SolidBrush brush(c);
 			graphics.FillRectangle(&brush, x1, y1, side_length, side_width);
@@ -224,11 +224,11 @@ namespace Draw {
 	* \param[in] fill : true if the circle is filled, false otherwise
 	*/
 	void circle(int x1, int y1, int radius, int pen_width, Color c, bool fill) {
-
 		Graphics graphics(hdc);
 		Pen      pen(c, (Gdiplus::REAL)pen_width);
 		Rect circleRect(x1, y1, radius, radius);
 		graphics.DrawEllipse(&pen, circleRect);
+
 		if (fill) {
 			SolidBrush brush(c);
 			graphics.FillEllipse(&brush, circleRect);

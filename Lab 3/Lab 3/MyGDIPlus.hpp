@@ -4,7 +4,7 @@
 #include <gdiplus.h>
 using namespace Gdiplus;
 
-#define BACKGROUND_COLOR  Color::Ivory      
+#define BACKGROUND_COLOR Color::Ivory
 #define DRAW_COLOR Color::Lavender
 
 namespace Draw {
