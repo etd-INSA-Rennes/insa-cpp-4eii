@@ -117,22 +117,33 @@
     <ClCompile Include="game.cpp" />
     <ClCompile Include="main_graphics_gdi.cpp" />
     <ClCompile Include="MyCircle.cpp" />
+    <ClCompile Include="MyFrame.cpp" />
+    <ClCompile Include="MyGameElement.cpp" />
     <ClCompile Include="MyGraphicObject.cpp" />
     <ClCompile Include="MyGraphicObjectManager.cpp" />
+    <ClCompile Include="MyImmobile.cpp" />
+    <ClCompile Include="MyMissile.cpp" />
+    <ClCompile Include="MyMobile.cpp" />
     <ClCompile Include="MyPoint.cpp" />
     <ClCompile Include="MyRectangle.cpp" />
+    <ClCompile Include="MyRocket.cpp" />
     <ClCompile Include="MySegment.cpp" />
     <ClCompile Include="MySquare.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="game.hpp" />
     <ClInclude Include="MyCircle.hpp" />
+    <ClInclude Include="MyFrame.hpp" />
     <ClInclude Include="MyGameElement.hpp" />
     <ClInclude Include="MyGDIPlus.hpp" />
     <ClInclude Include="MyGraphicObject.hpp" />
     <ClInclude Include="MyGraphicObjectManager.hpp" />
+    <ClInclude Include="MyImmobile.hpp" />
+    <ClInclude Include="MyMissile.hpp" />
+    <ClInclude Include="MyMobile.hpp" />
     <ClInclude Include="MyPoint.hpp" />
     <ClInclude Include="MyRectangle.hpp" />
+    <ClInclude Include="MyRocket.hpp" />
     <ClInclude Include="MySegment.hpp" />
     <ClInclude Include="MySquare.hpp" />
   </ItemGroup>

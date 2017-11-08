@@ -1,4 +1,4 @@
-# insa-cpp-4eii
+﻿# insa-cpp-4eii
 Le code des TPs de C++ proposés à l'INSA de Rennes, département 4EII
 
 ![alt tag](http://image.noelshack.com/fichiers/2016/51/1482265229-15168898-1848568648698247-7965944903553434182-o.jpg)
@@ -26,5 +26,11 @@ Objectives :
 ### 3. Graphic objects
 
 Objectives :
-* Implement inheritance from an UML diagram
-* Study polymorphism
+* Implement inheritance from an UML diagram;
+* Study polymorphism.
+
+### 4. Game
+
+Objectives :
+* Propose a solution using inheritance ;
+* Study polymorphism.

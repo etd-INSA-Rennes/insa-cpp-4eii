@@ -1,12 +1,13 @@
 #pragma once
+
 #include <vector>
 
-// forward declations
-class MyFrame;
-class MyRocket;
-class MyMissile;
+#include "MyFrame.hpp"
+#include "MyRocket.hpp"
+#include "MyMissile.hpp"
 
 class Game {
+
 public:
 	Game();
 	~Game();

@@ -1,32 +1,28 @@
 #include "game.hpp"
-//Uncomment line by line as you implement and test your classes
-//#include "MyFrame.h"
-//#include "MyMissile.h"
-//#include "MyRocket.h"
+#include "MyFrame.hpp"
+#include "MyMissile.hpp"
+#include "MyRocket.hpp"
 
-//Uncomment step by step
-Game::Game() /*:frame_(0),rocket_(0),missile_(0),game_over_(0)*/ { }
+Game::Game() : frame_(0), rocket_(0), missile_(0), game_over_(0) {
 
-
-Game::~Game() {
-	//Uncomment step by step
-	//delete frame_;
-	//delete rocket_;
-	//delete missile_;
 }
 
+Game::~Game() {
+	delete frame_;
+	delete rocket_;
+	delete missile_;
+}
 
 /*!
 * \fn void initializeScene()
-* \brief initializae all ojects in the game
+* \brief initialize all ojects in the game
 */
-void Game::initialize()
-{
+void Game::initialize() {
 	if (frame_) return; // guard
-	//Uncomment step by step
-	//frame_   = new MyFrame(Position(10, 10), MySize(700, 420), Color::Brown);
-	//missile_ = new MyMissile(Position(30, 40), 10, Speed(5,4), Color::Orange);
-	//rocket_  = new MyRocket(Position(200, 200), MySize(60, 30), Speed(6, -3), Color::Green);
+	
+	frame_   = new MyFrame(Position(10, 10), MySize(700, 420), Color::Brown);
+	missile_ = new MyMissile(Position(30, 40), 10, Speed(5,4), Color::Orange);
+	rocket_  = new MyRocket(Position(200, 200), MySize(60, 30), Speed(6, -3), Color::Green);
 }
 
 /*!
@@ -51,17 +47,16 @@ void Game::step() {
 	}*/
 }
 
-
 /*!
 * \fn void draw()
 * \brief Draw all objects
 */
 void Game::draw() {
 	if (!frame_) return; // guard
-	//Uncomment step by step
-	//frame_->draw();
-	//missile_->draw();
-	//rocket_->draw();
+
+	/*
+	frame_->draw();
+	missile_->draw();
+	rocket_->draw();
+	*/
 }
-
-
