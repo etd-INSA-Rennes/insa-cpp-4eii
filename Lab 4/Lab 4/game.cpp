@@ -30,13 +30,13 @@ void Game::initialize() {
 * \brief Move all objects left or right
 */
 void Game::step() {
-	/*
-	//Uncomment step by step
-	if (!frame_) return; // guard
-	if (!game_over_)
-	{
+	if (!frame_) return;
+
+	if (!game_over_) {
 		missile_->step();
 		rocket_->step();
+
+		/*
 		if (frame_->isHit(rocket_->getBoundingBox()))   rocket_->changeDirection();
 		if (frame_->isHit(missile_->getBoundingBox()))  missile_->changeDirection();
 		if (rocket_->isHit(missile_->getBoundingBox())) 
@@ -44,7 +44,8 @@ void Game::step() {
 			rocket_->explode(); 
 			game_over_ = 1;
 		}
-	}*/
+		*/
+	}
 }
 
 /*!
@@ -54,9 +55,7 @@ void Game::step() {
 void Game::draw() {
 	if (!frame_) return; // guard
 
-	/*
 	frame_->draw();
 	missile_->draw();
 	rocket_->draw();
-	*/
 }

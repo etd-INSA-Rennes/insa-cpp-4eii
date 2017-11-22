@@ -8,6 +8,6 @@ MyPoint::~MyPoint() {
 
 }
 
-void MyPoint::draw() {
+void MyPoint::draw() const {
 	Draw::point(x_, y_, 2, color_);
 }

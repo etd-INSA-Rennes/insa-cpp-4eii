@@ -8,6 +8,6 @@ MySegment::~MySegment() {
 
 }
 
-void MySegment::draw() {
+void MySegment::draw() const {
 	Draw::line(x_, y_, x_ + dx_, y_ + dy_, 2, color_);
 }

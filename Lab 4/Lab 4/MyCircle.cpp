@@ -8,6 +8,6 @@ MyCircle::~MyCircle() {
 
 }
 
-void MyCircle::draw() {
+void MyCircle::draw() const {
 	Draw::circle(x_, y_, radius_, 2, color_, fill_);
 }

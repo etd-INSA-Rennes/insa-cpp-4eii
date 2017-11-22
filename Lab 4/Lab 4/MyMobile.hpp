@@ -12,6 +12,7 @@ public:
 	~MyMobile();
 
 	bool isHit(const BoundingBox &bb) const;
+	virtual void step() = 0;
 
 protected:
 

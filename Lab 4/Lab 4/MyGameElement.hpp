@@ -2,6 +2,7 @@
 
 #include "MyGraphicObjectManager.hpp"
 #include "MyGDIPlus.hpp"
+#include "MyGraphicObject.hpp"
 
 // replace int by strong typing for safer API
 struct Position { 
@@ -47,4 +48,6 @@ protected :
 	BoundingBox bb_;
 	Color color_;
 	MyGraphicObjectManager figures_;
+
+	virtual void addGraphicObject() = 0;
 };

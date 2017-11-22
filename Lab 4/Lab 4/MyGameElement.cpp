@@ -11,3 +11,9 @@ MyGameElement::MyGameElement(const Position &p, int s, Color c) : bb_({ p, MySiz
 MyGameElement::~MyGameElement() {
 
 }
+
+void MyGameElement::draw() const {
+	for (int i = 0; i < figures_.size(); ++i) {
+		figures_[i].draw();
+	}
+}
