@@ -20,8 +20,8 @@ Game::~Game() {
 void Game::initialize() {
 	if (frame_) return; // guard
 	
-	frame_   = new MyFrame(Position(10, 10), MySize(700, 420), Color::Brown);
-	missile_ = new MyMissile(Position(30, 40), 10, Speed(5,4), Color::Orange);
+	frame_   = new MyFrame(Position(10, 10), MySize(715, 430), Color::Brown);
+	missile_ = new MyMissile(Position(30, 40), 10, Speed(5, 4), Color::Orange);
 	rocket_  = new MyRocket(Position(200, 200), MySize(60, 30), Speed(6, -3), Color::Green);
 }
 
@@ -36,15 +36,13 @@ void Game::step() {
 		missile_->step();
 		rocket_->step();
 
-		/*
 		if (frame_->isHit(rocket_->getBoundingBox()))   rocket_->changeDirection();
 		if (frame_->isHit(missile_->getBoundingBox()))  missile_->changeDirection();
-		if (rocket_->isHit(missile_->getBoundingBox())) 
-		{
-			rocket_->explode(); 
+
+		if (rocket_->isHit(missile_->getBoundingBox())) {
+			//rocket_->explode(); 
 			game_over_ = 1;
 		}
-		*/
 	}
 }
 

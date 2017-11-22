@@ -9,6 +9,9 @@
 #endif
 
 #include <windows.h>
+#include <stdlib.h>
+#include <time.h>
+
 #include "game.hpp"
 #include "MyGDIPlus.hpp"
 
@@ -82,6 +85,8 @@ INT WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, PSTR, INT iCmdShow)
 	WNDCLASS            wndClass;
 	GdiplusStartupInput gdiplusStartupInput;
 	ULONG_PTR           gdiplusToken;
+
+	srand(time(NULL));
 
 	// Initialize GDI+.
 	GdiplusStartup(&gdiplusToken, &gdiplusStartupInput, NULL);

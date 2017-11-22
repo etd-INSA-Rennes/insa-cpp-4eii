@@ -2,6 +2,8 @@
 
 #include "MyGameElement.hpp"
 
+#include <cstdlib>
+
 class MyMobile : public MyGameElement {
 
 public:
@@ -12,10 +14,15 @@ public:
 	~MyMobile();
 
 	bool isHit(const BoundingBox &bb) const;
-	virtual void step() = 0;
+	void step();
+
+	void changeDirection();
 
 protected:
 
 	Speed speed_;
+
+	int xDirection_;
+	int yDirection_;
 };
 

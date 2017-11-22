@@ -11,8 +11,6 @@ public:
 
 	~MyRocket();
 
-	void step();
-
 private:
 
 	void addGraphicObject();

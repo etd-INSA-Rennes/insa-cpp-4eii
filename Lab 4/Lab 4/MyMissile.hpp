@@ -12,8 +12,6 @@ public:
 
 	~MyMissile();
 
-	void step();
-
 private:
 
 	void addGraphicObject();

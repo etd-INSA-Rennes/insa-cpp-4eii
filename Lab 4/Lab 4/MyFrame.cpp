@@ -10,14 +10,14 @@ MyFrame::~MyFrame() {
 
 void MyFrame::addGraphicObject() {
 	// top
-	figures_.addObject(new MyRectangle(0, 0, Color::Red, true, 750, 10));
+	figures_.addObject(new MyRectangle(bb_.p.x, bb_.p.y, color_, true, bb_.s.dx, 1));
 
 	// right
-	figures_.addObject(new MyRectangle(725, 0, Color::Red, true, 10, 500));
+	figures_.addObject(new MyRectangle(bb_.p.x + bb_.s.dx, bb_.p.y, color_, true, 1, bb_.s.dy));
 
 	// bot
-	figures_.addObject(new MyRectangle(0, 450, Color::Red, true, 750, 10));
+	figures_.addObject(new MyRectangle(bb_.p.x, bb_.p.y + bb_.s.dy, color_, true, bb_.s.dx, 1));
 
 	// left
-	figures_.addObject(new MyRectangle(0, 0, Color::Red, true, 10, 500));
+	figures_.addObject(new MyRectangle(bb_.p.x, bb_.p.y, color_, true, 1, bb_.s.dy));
 }
